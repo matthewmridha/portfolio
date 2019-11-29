@@ -21,7 +21,7 @@ const NavBar = () => {
         dark id = 'navbar'
         style = { style2 }> 
         <NavbarToggler onClick={toggleNavbar} className="mr-auto" />
-        <Collapse isOpen={!collapsed} navbar> 
+        <Collapse isOpen={!collapsed} navbar> Menu
         <Nav >
         <NavItem >
         <NavLink href = '#home' style = { style }>
