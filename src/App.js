@@ -13,7 +13,36 @@ import Projects from './Projects.js';
 
 class App extends React.Component {
    
-
+    componentDidMount(){
+        
+        
+        window.onscroll = () => {
+            
+            let y = window.scrollY;
+            let homeHeight = document.getElementById('home').offsetHeight;
+            let aboutHeight = document.querySelector('.about').offsetHeight;
+            let skillsHeight = document.getElementById('skills').offsetHeight;
+            
+            if ( y + window.innerHeight >=  homeHeight ){
+                document.querySelector('#aboutTitle').style.animationPlayState = 'running';
+                document.querySelector('#aboutP').style.animationPlayState = 'running';
+            } 
+            if (y  + window.innerHeight >=   homeHeight + aboutHeight) {
+                document.querySelector('#skillsTitle').style.animationPlayState = 'running';
+                document.querySelector('.front-end').style.animationPlayState = 'running';
+                document.querySelector('.server-side').style.animationPlayState = 'running';
+                document.querySelector('.database').style.animationPlayState = 'running';
+                document.querySelector('.version-control').style.animationPlayState = 'running';
+            } 
+            if (y + window.innerHeight >=  homeHeight + aboutHeight + skillsHeight ) {
+                for(let i = 1; i <= 13; i++){
+                    document.querySelector(`#project${i}`).style.animationPlayState = 'running';
+                }
+               
+            };
+        };
+        
+    };
     render() {
         return ( 
             <div id="App">
@@ -27,7 +56,9 @@ class App extends React.Component {
                 <div id = "skills" >
                 <Skills />
                 </div>
+                <div id = ' works ' >
                 <Projects />
+                </div>
                 <div className = 'social-contact' id = 'social-contact'>
                 <Self />
                 <Social />

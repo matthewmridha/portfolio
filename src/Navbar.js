@@ -7,9 +7,9 @@ const style = {
     
 }
 const style2 = {
-    backgroundColor: 'rgba(0, 0, 0, 0.6)',
     margin: "5px",
-    padding: "0px"
+    padding: "0px",
+    color: '#cccaac'
 }
 
 const NavBar = () => {
@@ -17,12 +17,17 @@ const NavBar = () => {
 
     const toggleNavbar = () => setCollapsed(!collapsed);
     return ( 
-        <Navbar color='faded'
+        <Navbar 
         dark id = 'navbar'
-        style = { style2 }> 
-        <NavbarToggler onClick={toggleNavbar} className="mr-auto" />
-        <Collapse isOpen={!collapsed} navbar> Menu
-        <Nav >
+        style = { style2 }>
+            
+        <span id='menuCaption'>
+            <NavbarToggler onClick={toggleNavbar}
+             className="mr-auto" id="navToggle"/>
+            <span id="menu-title">Menu</span>
+        </span>
+        <Collapse isOpen={!collapsed} navbar>
+        <Nav  vertical>
         <NavItem >
         <NavLink href = '#home' style = { style }>
         Home 

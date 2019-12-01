@@ -101,7 +101,7 @@ const projectList = [{
         comments. The user can then leave a rating out of 5 and leave a comment about the book. The comment and the rating will be storred in the database
         and will effect the local rating of the book. Both the comment and the rating info will be made avaialble for all future users to view. One user can only
         review or rate a book only once. An API call can alsp be made to get the local rating details of a book using ISBN.`,
-        liveLink: "https://matthewmridha.github.io/random-quote-machine/"
+        liveLink: "https://booksproject1cs50.herokuapp.com/"
     },
     {
         id: 10,
@@ -143,7 +143,7 @@ const projectList = [{
         
         When users enter or leaves or joins a room, the room in question gets a user has joined and user has left message with timestamp.`,
 
-        liveLink: "https://codepen.io/matthewmridha/full/qJdPgE"
+        liveLink: "https://flask-socketio-chat-app.herokuapp.com/"
     },
     {
         id: 8,

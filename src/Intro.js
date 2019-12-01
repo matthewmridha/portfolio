@@ -2,7 +2,7 @@ import React from 'react';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const name = "Matthew Mridha ";
+const name = "Matthew Mridha";
 const title = "web developer"
 
 class Intro extends React.Component {
@@ -43,7 +43,7 @@ class Intro extends React.Component {
             <div className = "intro" >
                 <div id="name">{ this.state.name }<span className="blink">|</span></div>
                 <div id="title">{ this.state.title }</div>
-        <div><a className='arrow' href='#about'><FontAwesomeIcon id="arrowIcon" icon={ faArrowDown }/> Explore</a></div>
+        <div><a className='arrow' href='#about'><FontAwesomeIcon id="arrowIcon" icon={ faArrowDown }/>Explore</a></div>
                 <div className='star starSmall star0'></div>
                 <div className='star starSmall srat1'></div>
                 <div className='star starSmall star3'></div>

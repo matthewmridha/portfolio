@@ -21,7 +21,7 @@ const Skills = () => {
         
     return ( 
         <div className='skills'>
-            <span className="highLight">Tech Stack</span> = { arrayOpen + " " } 
+            <span className="highLight" id="skillsTitle">Tech Stack</span> = { arrayOpen + " " } 
             <div className="front-end">
                 <span className="brackets">{openCurly + " " }</span>
                 Front-End  
